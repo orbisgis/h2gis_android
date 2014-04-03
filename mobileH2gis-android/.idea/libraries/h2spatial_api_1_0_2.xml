@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="h2spatial-api-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.orbisgis/h2spatial-api/1.0.2/6f39c962065be80d57d9708f9e301e9755f3b7e/h2spatial-api-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.orbisgis/h2spatial-api/1.0.2/efc6a6c49a86563e4adda38fe50720500eb9f525/h2spatial-api-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="h2drivers-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.orbisgis/h2drivers/1.0.2/273dff008976407e32e1f806deb4a5507e46f310/h2drivers-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.orbisgis/h2drivers/1.0.2/2b312c96c493491ff654806efbdfba6b8e3162fa/h2drivers-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
