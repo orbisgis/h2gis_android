@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name="com.ogis.mobileh2gis.app.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>

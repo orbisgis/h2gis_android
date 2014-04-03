@@ -3,6 +3,6 @@
 
     <string name="app_name">MobileH2GIS</string>
     <string name="empty"></string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Reset</string>
 
 </resources>
