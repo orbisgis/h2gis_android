@@ -124,6 +124,6 @@ public class H2GIS extends CordovaPlugin {
             json.put(obj);
         }
 
-        return json;
+        return json.toString();
     }
 }
