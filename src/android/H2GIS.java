@@ -50,7 +50,7 @@ public class H2GIS extends CordovaPlugin {
                 if (firstWord.equals("SELECT")) {
                     ResultSet rs = this.connection.createStatement().executeQuery(query);
                     JSONArray a= this.convert(rs);
-                    callbackContext.success(a);
+                    callbackContext.success(a.toString());
                 } else {
                     this.connection.createStatement().execute(query);
                     callbackContext.success();
@@ -124,6 +124,6 @@ public class H2GIS extends CordovaPlugin {
             json.put(obj);
         }
 
-        return json.toString();
+        return json;
     }
 }
