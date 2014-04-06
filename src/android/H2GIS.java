@@ -53,7 +53,7 @@ public class H2GIS extends CordovaPlugin {
                     callbackContext.success(a.toString());
                 } else {
                     this.connection.createStatement().execute(query);
-                    callbackContext.success();
+                    callbackContext.success("LOL");
                 }
                return true;
             }
