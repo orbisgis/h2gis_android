@@ -16,7 +16,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="h2GIS">
+            <feature name="H2GIS">
                 <param name="android-package" value="org.ogis.h2gis.H2GIS"/>
             </feature>
         </config-file>

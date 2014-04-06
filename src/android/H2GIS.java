@@ -41,7 +41,7 @@ public class Calendar extends CordovaPlugin {
         try {
             if (ACTION_QUERY.equals(action)) { 
                 JSONObject arg_object = args.getJSONObject(0);
-                String query = arg_object.getString('query').trim();
+                String query = arg_object.getString("query").trim();
                 String firstWord = query.split(" ", 2)[0].toUpperCase();
                 if (firstWord.equals("SELECT")) {
                     ResultSet rs = this.connection.createStatement().executeQuery(query);
