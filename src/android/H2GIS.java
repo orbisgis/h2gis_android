@@ -122,3 +122,4 @@ public class Calendar extends CordovaPlugin {
 
         return json;
     }
+}
