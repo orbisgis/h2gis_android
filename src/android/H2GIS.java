@@ -2,6 +2,8 @@ package org.ogis.h2gis;
  
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaWebView;
 import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -13,10 +15,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
+import java.sql.SQLException;
 
 
 
-public class Calendar extends CordovaPlugin {
+
+public class H2GIS extends CordovaPlugin {
     public static final String ACTION_QUERY = "query";
     private Connection connection;
     @override
