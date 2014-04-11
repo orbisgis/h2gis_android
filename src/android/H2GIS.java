@@ -102,7 +102,7 @@ public class H2GIS extends CordovaPlugin {
                     String s=rs.getNString(column_name);
                     String start=s.substring(0,Math.min(s.length(),8));
                     if(start.equals("{\"type\":")) {
-                        obj.put(column_name, new JSONObject(getNString(column_name)));
+                        obj.put(column_name, new JSONObject(rs.getNString(column_name)));
                     } else {
                         obj.put(column_name, rs.getNString(column_name));
                     }
@@ -111,7 +111,7 @@ public class H2GIS extends CordovaPlugin {
                     String s=rs.getNString(column_name);
                     String start=s.substring(0,Math.min(s.length(),8));
                     if (start.equals("{\"type\":")) {
-                        obj.put(column_name, new JSONObject(getString(column_name)));
+                        obj.put(column_name, new JSONObject(rs.getString(column_name)));
                     } else {
                         obj.put(column_name, rs.getString(column_name));
                     }
