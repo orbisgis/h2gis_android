@@ -55,7 +55,7 @@ public class H2GIS extends CordovaPlugin {
                     this.connection.createStatement().execute(query);
                     callbackContext.success("LOL");
                 }
-               return true;
+                return true;
             }
             callbackContext.error("Invalid action");
             return false;
@@ -99,10 +99,22 @@ public class H2GIS extends CordovaPlugin {
                     obj.put(column_name, rs.getInt(column_name));
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.NVARCHAR){
-                    obj.put(column_name, rs.getNString(column_name));
+                    String s=rs.getNString(column_name);
+                    String start=s.substring(0,Math.min(s.length(),8));
+                    if(start.equals("{\"type\":")) {
+                        obj.put(column_name, new JSONObject(getNString(column_name));
+                    } else {
+                        obj.put(column_name, rs.getNString(column_name));
+                    }
                 }    
                 else if(rsmd.getColumnType(i)==java.sql.Types.VARCHAR){
-                    obj.put(column_name, rs.getString(column_name));
+                    String s=rs.getNString(column_name);
+                    String start=s.substring(0,Math.min(s.length(),8));
+                    if(start.equals("{\"type\":")) {
+                        obj.put(column_name, new JSONObject(getString(column_name));
+                    } else {
+                        obj.put(column_name, rs.getString(column_name));
+                    }
                 }
                 else if(rsmd.getColumnType(i)==java.sql.Types.TINYINT){
                     obj.put(column_name, rs.getInt(column_name));
