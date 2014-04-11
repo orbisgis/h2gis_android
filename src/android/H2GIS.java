@@ -47,7 +47,7 @@ public class H2GIS extends CordovaPlugin {
                 JSONObject arg_object = args.getJSONObject(0);
                 String query = arg_object.getString("query").trim();
                 String firstWord = query.split(" ", 2)[0].toUpperCase();
-                if (firstWord.equals("SELECT")) {
+                if (firstWord.equals("SELECT") || firstWord.equals("SHOW")) {
                     ResultSet rs = this.connection.createStatement().executeQuery(query);
                     JSONArray a= this.convert(rs);
                     callbackContext.success(a.toString());
