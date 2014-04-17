@@ -8,3 +8,6 @@ First create a new phonegap project by using 'phonegap create path-to-app "com.e
 And then copying the contents of this repositry into path-to-app
 
 Then run: "phonegap build android" or "phonegap run android"
+
+### Warning:
+Not complete yet, check out console mode at lPadier/mobileH2P
