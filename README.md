@@ -10,8 +10,7 @@ And then copying the contents of this repositry into path-to-app
 Then run: "phonegap build android" or "phonegap run android"
 
 ### Warning:
-Might want to add a .gitignore entry on the /platform /hooks and /merges directories
 
-Also this project is not complete, the javascript was used in a chrome view debug mode.
+This project is not complete, the javascript was used in a chrome view debug mode. Buttons will be added shortly. You phone also needs internet to run the app.
 
 
