@@ -3,6 +3,7 @@
 hooks/
 merges/
 platforms/
+plugins/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
