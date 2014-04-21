@@ -55,7 +55,7 @@
                 };
                 var error = function(message) { alert("Oopsie! " + message); };
                 h2gis.query("CALL SHPREAD('"+document.getElementById("input").value+"','TEST')",function(){},error);
-                h2gis.query('SELECT ST_ASGEOJSON(the_geom) as geometry from test',function(json) {
+                h2gis.query('SELECT ST_ASGEOJSON(the_geom) as "geometry" from test',function(json) {
 
                     res=JSON.parse(json);
 
