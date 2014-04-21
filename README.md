@@ -9,8 +9,8 @@ And then copying the contents of this repositry into path-to-app
 
 Then run: "phonegap build android" or "phonegap run android"
 
-### Warning:
+### Notice:
 
-This project is not complete, the javascript was used in a chrome view debug mode. Buttons will be added shortly. You phone also needs internet to run the app.
+Your or tablet phone needs internet to run the app.
 
 
